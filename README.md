@@ -1,2 +1,2 @@
-# budget
+# Budget
 Monthly Budget Estimator
