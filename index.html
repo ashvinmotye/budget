@@ -6,7 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Monthly Budget | Ashvin Motye</title>
+  <title>Budget Estimator | Ashvin Motye</title>
+
+  <meta name="description" content="Ever wonder how you span out your salary over a month? This app is here to help you keep track of your expenses!" />
+  <meta name="application-name" content="Budget Estimator">
+  <meta name="author" content="Ashvin Motye">
+  <meta name="keywords" content="monthly budget, ashvin motye, salary">
+
+  <meta property="og:url" content="https://www.ashvinmotye.com/budget-test/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Budget Estimator" />
+  <meta property="og:description" content="Ever wonder how you span out your salary over a month? This app is here to help you keep track of your expenses!" />
+  <meta property="og:image" itemprop="image" content="https://www.ashvinmotye.com/budget-test/assets/images/description.png" />
+
   <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png">
 
   <link rel="stylesheet" href="./assets/css/styles.css">
@@ -25,13 +37,13 @@
 
     <form>
       <div class="input-group">
-        <input type="text" name="item" id="item" required>
-        <label for="item">Item</label>
+        <label for="new-item">Item</label>
+        <input type="text" name="new-item" id="new-item" required aria-label="Item">
       </div>
 
       <div class="input-group">
-        <input type="number" name="amount" id="amount" min="0.01" step="0.01" required>
-        <label for="item">Amount</label>
+        <label for="new-amount">Amount</label>
+        <input type="number" name="new-amount" id="new-amount" min="0.01" step="0.01" required aria-label="Amount">
       </div>
 
       <div class="input-group">
@@ -50,13 +62,13 @@
     <div id="app">
       <form>
         <div class="input-group">
-          <input type="text" name="item" id="item" required>
           <label for="item">Item</label>
+          <input type="text" name="item" id="item" required aria-label="Item">
         </div>
 
         <div class="input-group">
-          <input type="number" name="amount" id="amount" min="0.01" step="0.01" required>
-          <label for="item">Amount</label>
+          <label for="amount">Amount</label>
+          <input type="number" name="amount" id="amount" min="0.01" step="0.01" required aria-label="Amount">
         </div>
 
         <div class="input-group">
@@ -69,14 +81,6 @@
       </div>
 
       <div id="all-items">
-        <!-- <div class="item">
-          <p class="item-title">Transport</p>
-          <p class="item-amount">2000</p>
-          <p class="item-menu">
-            <span class="ti-trash"></span>
-            <span class="ti-pencil"></span>
-          </p>
-        </div> -->
       </div>
     </div>
   </div>
